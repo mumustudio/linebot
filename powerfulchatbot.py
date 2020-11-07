@@ -188,7 +188,7 @@ def image_recognition(imagefilepath):
     import requests
     data = open('./data.json', 'rb').read()
     response = requests.post(
-        url='https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBSscdPQsM_AFZapsFOHK66U-TgHjdX_8M',
+        url='https://vision.googleapis.com/v1/images:annotate?key=',
         data=data,
         headers={'Content-Type': 'application/json'})
     response = response.text
